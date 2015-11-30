@@ -10,14 +10,14 @@
     "128": "images/icon128.png"
   },
   "permissions": [
-    "tabs",
-    "alarms",
-    "notifications",
-    "contextMenus"
+    "background"
   ],
   "browser_action": {
-    "default_title": "ChromeChronopher",
+    "default_title": "Chrome Chronopher",
     "default_popup": "popup.html"
+  },
+  "background": {
+    "page": "background.html"
   },
   "options_page": "config.html"
 }
