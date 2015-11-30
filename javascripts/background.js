@@ -1,7 +1,11 @@
 window.onload = loop;
 
 function loop() {
-  console.log("hoge");
-  playSound();
+  var date = new Date();
+
+  if (date.getMinutes() == 0 && date.getSeconds() == 0) {
+    playSound(date.getHours());
+  }
+
   setTimeout(loop, 1000)
 }
