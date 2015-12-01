@@ -9,3 +9,12 @@ function playSound(hour) {
 
   audio.src = '../sounds/' + hour + '.mp3';
 }
+
+function playTestSound() {
+  var audio = document.getElementById('test-sound');
+  audio.volume = volume / 100;
+  if (typeof(audio.currentTime) != 'undefined') {
+    audio.currentTime = 0;
+  }
+  audio.play();
+}

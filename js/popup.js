@@ -10,6 +10,7 @@ $(function() {
     change : function() {
       var value = $('#volume').slider('value');
       bg.volume = value;
+      bg.playTestSound();
     }
   });
 });
