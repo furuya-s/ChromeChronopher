@@ -1,4 +1,13 @@
 var volume = 50;
+chrome.storage.local.get("chrome_chronopher_volume", function(value) {
+  if (chrome.runtime.error) {
+    chrome.storage.local.set({
+      "chrome_chronopher_volume": 50
+    }, function(){});
+  } else {
+    volume = value.chrome_chronopher_volume
+  }
+});
 
 function playSound(hour) {
 

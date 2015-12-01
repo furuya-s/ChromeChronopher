@@ -10,7 +10,8 @@
     "128": "img/icon128.png"
   },
   "permissions": [
-    "background"
+    "background",
+    "storage"
   ],
   "browser_action": {
     "default_title": "Chrome Chronopher",
