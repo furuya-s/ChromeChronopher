@@ -12,6 +12,7 @@ $(function() {
       chrome.storage.local.set({
         "chrome_chronopher_volume": value
       }, function(){});
+      
       bg.volume = value;
       bg.playTestSound();
     }
